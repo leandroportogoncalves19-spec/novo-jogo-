@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+/* TELAS */
+.screen {
+  display: none;
+}
+
+.screen.active {
+  display: block;
+}
+
+/* BOTÕES */
+.btn {
+  padding: 12px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.red { background: red; }
+.yellow { background: goldenrod; }
+.gray { background: gray; }
+
+/* TOPO */
+.top {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+/* ÁREA DO JOGO */
+#playArea {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  border: 2px solid white;
+}
+
+/* MACACO */
+#monkey {
+  width: 100px;
+  position: absolute;
+  cursor: pointer;
+}
+
+/* TEXTO */
+#feedback {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* FIM */
+.fim {
+  font-size: 60px;
+  color: brown;
+}

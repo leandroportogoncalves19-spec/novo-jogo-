@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pegue o Macaco 🐒</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- MENU -->
+<section id="menu" class="screen active">
+  <h1>PEGUE O MACACO 🐒</h1>
+
+  <button id="btnPlay" class="btn red">Jogar</button>
+  <button id="btnHow" class="btn yellow">Como jogar</button>
+  <button class="btn gray">Configurações</button>
+</section>
+
+<!-- COMO JOGAR -->
+<section id="how" class="screen">
+  <h2>Como Jogar</h2>
+  <p>Clique no macaco o mais rápido possível antes do tempo acabar!</p>
+  <button id="btnBack" class="btn">Voltar</button>
+</section>
+
+<!-- JOGO -->
+<section id="game" class="screen">
+
+  <div class="top">
+    ⏱️ <span id="time">30</span>
+    <button id="btnPause" class="btn gray">Pausar</button>
+  </div>
+
+  <div id="playArea">
+    <!-- SUA IMAGEM -->
+    <img id="monkey" src="images.jpg" alt="Macaco">
+  </div>
+
+  <p id="feedback"></p>
+
+</section>
+
+<!-- PAUSA -->
+<section id="pause" class="screen">
+  <h1>PAUSADO</h1>
+  <button id="btnResume" class="btn">Voltar ao jogo</button>
+</section>
+
+<!-- FIM -->
+<section id="end" class="screen">
+  <h1 class="fim">FIM</h1>
+  <button id="btnMenu" class="btn">Menu</button>
+</section>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>

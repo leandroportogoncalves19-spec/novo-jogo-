@@ -1,7 +1,6 @@
-/* RESET BÁSICO */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Arial;
   background: black;
   color: white;
   text-align: center;
@@ -24,29 +23,15 @@ body {
   border: none;
   border-radius: 10px;
   color: white;
-  font-size: 16px;
   cursor: pointer;
-  transition: 0.2s;
+  font-size: 16px;
 }
 
-.btn:hover {
-  transform: scale(1.05);
-}
+.red { background: red; }
+.yellow { background: goldenrod; }
+.gray { background: gray; }
 
-/* CORES DOS BOTÕES */
-.red {
-  background: red;
-}
-
-.yellow {
-  background: goldenrod;
-}
-
-.gray {
-  background: gray;
-}
-
-/* TOPO DO JOGO */
+/* TOPO */
 .top {
   display: flex;
   justify-content: space-between;
@@ -69,22 +54,16 @@ body {
   width: 100px;
   position: absolute;
   cursor: pointer;
-  transition: 0.2s;
 }
 
-#monkey:hover {
-  transform: scale(1.1);
-}
-
-/* TEXTO DE FEEDBACK */
+/* TEXTO */
 #feedback {
   font-size: 20px;
   margin-top: 10px;
 }
 
-/* TELA FINAL */
+/* FIM */
 .fim {
   font-size: 60px;
   color: brown;
-  margin-top: 20px;
 }

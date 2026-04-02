@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>Pegue o Macaco 🐒</title>
 
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -31,11 +30,13 @@
 
   <div class="top">
     ⏱️ <span id="time">30</span>
+
+    🏆 <span id="score">0</span>
+
     <button id="btnPause" class="btn gray">Pausar</button>
   </div>
 
   <div id="playArea">
-    <!-- SUA IMAGEM -->
     <img id="monkey" src="images.jpg" alt="Macaco">
   </div>
 
@@ -52,10 +53,12 @@
 <!-- FIM -->
 <section id="end" class="screen">
   <h1 class="fim">FIM</h1>
+
+  <p>🏆 Pontuação final: <span id="finalScore">0</span></p>
+
   <button id="btnMenu" class="btn">Menu</button>
 </section>
 
-<!-- JS -->
 <script src="script.js"></script>
 
 </body>

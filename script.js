@@ -1,4 +1,3 @@
-// VARIÁVEIS
 let time = 30;
 let score = 0;
 let timer = null;
@@ -6,7 +5,6 @@ let paused = false;
 
 document.addEventListener("DOMContentLoaded", () => {
 
-  // ELEMENTOS
   const btnPlay = document.getElementById("btnPlay");
   const btnPause = document.getElementById("btnPause");
   const btnResume = document.getElementById("btnResume");
@@ -22,7 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const playArea = document.getElementById("playArea");
   const feedback = document.getElementById("feedback");
 
-  // EVENTOS
   btnPlay.onclick = startGame;
   btnPause.onclick = pauseGame;
   btnResume.onclick = resumeGame;
@@ -30,13 +27,11 @@ document.addEventListener("DOMContentLoaded", () => {
   btnBack.onclick = () => showScreen("menu");
   btnMenu.onclick = () => showScreen("menu");
 
-  // TELAS
   function showScreen(id) {
     document.querySelectorAll(".screen").forEach(s => s.classList.remove("active"));
     document.getElementById(id).classList.add("active");
   }
 
-  // INICIAR
   function startGame() {
     time = 30;
     score = 0;
@@ -62,7 +57,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 1000);
   }
 
-  // MOVER
   function moveMonkey() {
     const maxX = playArea.clientWidth - monkey.clientWidth;
     const maxY = playArea.clientHeight - monkey.clientHeight;
@@ -74,7 +68,6 @@ document.addEventListener("DOMContentLoaded", () => {
     monkey.style.top = y + "px";
   }
 
-  // CLIQUE
   monkey.onclick = () => {
     score++;
     scoreText.textContent = score;
@@ -82,7 +75,6 @@ document.addEventListener("DOMContentLoaded", () => {
     moveMonkey();
   };
 
-  // PAUSA
   function pauseGame() {
     paused = true;
     showScreen("pause");
@@ -93,7 +85,6 @@ document.addEventListener("DOMContentLoaded", () => {
     showScreen("game");
   }
 
-  // FINAL
   function endGame() {
     clearInterval(timer);
     finalScoreText.textContent = score;
@@ -101,3 +92,5 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 });
+  
+        

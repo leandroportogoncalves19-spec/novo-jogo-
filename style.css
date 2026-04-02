@@ -1,6 +1,7 @@
+/* RESET BÁSICO */
 body {
   margin: 0;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   background: black;
   color: white;
   text-align: center;
@@ -9,6 +10,7 @@ body {
 /* TELAS */
 .screen {
   display: none;
+  padding: 20px;
 }
 
 .screen.active {
@@ -17,23 +19,40 @@ body {
 
 /* BOTÕES */
 .btn {
-  padding: 12px;
+  padding: 12px 20px;
   margin: 10px;
   border: none;
   border-radius: 10px;
   color: white;
+  font-size: 16px;
   cursor: pointer;
+  transition: 0.2s;
 }
 
-.red { background: red; }
-.yellow { background: goldenrod; }
-.gray { background: gray; }
+.btn:hover {
+  transform: scale(1.05);
+}
 
-/* TOPO */
+/* CORES DOS BOTÕES */
+.red {
+  background: red;
+}
+
+.yellow {
+  background: goldenrod;
+}
+
+.gray {
+  background: gray;
+}
+
+/* TOPO DO JOGO */
 .top {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px;
+  font-size: 18px;
 }
 
 /* ÁREA DO JOGO */
@@ -42,6 +61,7 @@ body {
   height: 400px;
   position: relative;
   border: 2px solid white;
+  margin-top: 20px;
 }
 
 /* MACACO */
@@ -49,16 +69,22 @@ body {
   width: 100px;
   position: absolute;
   cursor: pointer;
+  transition: 0.2s;
 }
 
-/* TEXTO */
+#monkey:hover {
+  transform: scale(1.1);
+}
+
+/* TEXTO DE FEEDBACK */
 #feedback {
   font-size: 20px;
   margin-top: 10px;
 }
 
-/* FIM */
+/* TELA FINAL */
 .fim {
   font-size: 60px;
   color: brown;
+  margin-top: 20px;
 }

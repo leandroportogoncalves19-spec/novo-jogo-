@@ -1,8 +1,9 @@
- // ===== CONFIGURAÇÃO =====
+ 
+  // ===== VARIÁVEIS =====
 let time = 30;
+let score = 0;
 let timer = null;
 let paused = false;
-let score = 0;
 
 // ===== ELEMENTOS =====
 const btnPlay = document.getElementById("btnPlay");
@@ -17,8 +18,8 @@ const scoreText = document.getElementById("score");
 const finalScoreText = document.getElementById("finalScore");
 
 const monkey = document.getElementById("monkey");
-const feedback = document.getElementById("feedback");
 const playArea = document.getElementById("playArea");
+const feedback = document.getElementById("feedback");
 
 // ===== EVENTOS =====
 btnPlay.onclick = startGame;
@@ -30,20 +31,5 @@ btnMenu.onclick = () => showScreen("menu");
 
 // ===== TROCAR TELAS =====
 function showScreen(id) {
-  document.querySelectorAll(".screen").forEach(tela => {
-    tela.classList.remove("active");
-  });
-
-  document.getElementById(id).classList.add("active");
-}
-
-// ===== INICIAR JOGO =====
-function startGame() {
-  time = 30;
-  score = 0;
-  paused = false;
-
-  timeText.textContent = time;
-  scoreText.textContent = score;
-
-  showScreen("game");
+  const screens = document.querySelectorAll(".screen");
+  screens.forEach(screen => screen.class
